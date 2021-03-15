@@ -1,0 +1,59 @@
+int Button1 = 6; // Set Button1 as pin 6
+int Button2 = 7; // Set Button2 as pin 7
+int Button3 = 8; // Set Button3 as pin 8
+int Button4 = 9; // Set Button4 as pin 9
+int Button5 = 10; // Set Button5 as pin 10
+int Button6 = 11; // Set Button6 as pin 11
+int Button7 = 12; // Set Button7 as pin 12
+
+int Buzzer = 13;// Set Buzzer as pin 13
+
+void setup()
+  
+{
+  //Declare the buttons pins as input
+  pinMode(Button1, INPUT); // Declare Button1 as input
+  pinMode(Button2, INPUT); // Declare Button2 as input
+  pinMode(Button3, INPUT); // Declare Button3 as input
+  pinMode(Button4, INPUT); // Declare Button4 as input
+  pinMode(Button5, INPUT); // Declare Button5 as input
+  pinMode(Button6, INPUT); // Declare Button6 as input
+  pinMode(Button7, INPUT); // Declare Button7 as input
+  //Declare buzzer pins as output
+  pinMode(Buzzer, OUTPUT); // Declare Buzzer as output
+}
+
+void loop() // Run agin and again
+{
+  //Read the value from buttons
+  int b1 = digitalRead(Button1); // Read the value from Button1
+  int b2 = digitalRead(Button2); // Read the value from Button2
+  int b3 = digitalRead(Button3); // Read the value from Button3
+  int b4 = digitalRead(Button4); // Read the value from Button4
+  int b5 = digitalRead(Button5); // Read the value from Button5
+  int b6 = digitalRead(Button6); // Read the value from Button6
+  int b7 = digitalRead(Button7); // Read the value from Button7
+  
+  //Condition every buttons
+  if( b1== 1 ){
+    tone(Buzzer,300,100); // Condition for Button1 and Buzzer will make an ouput from Button1
+  }
+    if( b2== 1 ){
+    tone(Buzzer,400,100); // Condition for Button2 and Buzzer will make an ouput from Button2
+  }
+    if( b3== 1 ){
+    tone(Buzzer,500,100); // Condition for Button3 and Buzzer will make an ouput from Button3
+  }
+    if( b4== 1 ){
+    tone(Buzzer,600,100); // Condition for Button4 and Buzzer will make an ouput from Button4
+  }
+    if( b5== 1 ){
+    tone(Buzzer,700,100); // Condition for Button5 and Buzzer will make an ouput from Button5
+  }
+    if( b6== 1 ){
+    tone(Buzzer,800,100); // Condition for Button6 and Buzzer will make an ouput from Button6
+  }
+    if( b7== 1 ){
+    tone(Buzzer,900,100); // Condition for Button7 and Buzzer will make an ouput from Button7
+  }
+}
